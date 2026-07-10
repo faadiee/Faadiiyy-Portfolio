@@ -1,0 +1,4 @@
++ submit button not working 
++ nav bar going with scrool up
++ nav bar hover box
++ 
