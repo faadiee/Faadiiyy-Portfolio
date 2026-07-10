@@ -8,6 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet" />
+  <script src="index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "chmKHH5EJEvWhckET",
+      });
+   })();
+</script>
 </head>
 <body>
 
@@ -66,12 +77,12 @@
         <input type="text" id="name" name="name" placeholder="Enter your Username" />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your Email" />
+        <input type="email" id="email" name="email" placeholder="Enter your Email..." />
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" cols="40" rows="4" placeholder="Enter your Message..."></textarea>
 
-        <input type="submit" value="Submit">
+        <button onclick="sendMail()">Submit</button>
       </form>
     </section>
   </main>
