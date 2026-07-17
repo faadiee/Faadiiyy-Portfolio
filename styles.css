@@ -22,9 +22,8 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(to right, #013b05, #025c07);
+  background: linear-gradient(to right bottom, #013b05, #04860b, #013b05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-  border-radius: 30px;
 }
 
 .navbar-inner {
@@ -74,6 +73,8 @@ body {
   max-width: 100%;
   border-radius: 20px;
   display: block;
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
 
 .section-box {
@@ -126,6 +127,7 @@ body {
   max-width: 700px;
   border-radius: 12px;
   margin-top: 20px;
+  display: block;
 }
 
 .contact-form {
@@ -170,4 +172,20 @@ body {
     position: absolute;
     right: 200px;
     top: 50%;
+}
+
+#submit {
+  color: white;
+  background-color: #109c19;
+  border: 2px solid rgb(41, 255, 41);
+  border-radius: 8px;
+  height: 30px;
+  margin-top: 3%;
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth Animation */
+}
+
+/* Makes the submit button hover! */
+#submit:hover {
+  transform: scale(1.05);
+  background-color: #0fab1c;
 }
