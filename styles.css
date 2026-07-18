@@ -10,7 +10,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to left, #006e04, #000000);
+  background: linear-gradient(to bottom, #022437, #000000);
   color: white;
   font-family: Arial, sans-serif;
 }
@@ -22,7 +22,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(to right bottom, #013b05, #04860b, #013b05);
+  background: linear-gradient(to right bottom, #022437, #003263);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
@@ -176,8 +176,8 @@ body {
 
 #submit {
   color: white;
-  background-color: #109c19;
-  border: 2px solid rgb(41, 255, 41);
+  background-color: #026194;
+  border: 2px solid rgb(231, 240, 231);
   border-radius: 8px;
   height: 30px;
   margin-top: 3%;
