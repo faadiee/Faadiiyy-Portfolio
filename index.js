@@ -19,3 +19,19 @@ function sendMail() {
     })
     .catch((err) => console.log(err));
 }
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        const loader = document.getElementById("loader");
+
+        loader.classList.add("loader-hide");
+
+        setTimeout(() => {
+            loader.remove();
+        }, 1000);
+
+    }, 2500);
+
+});
